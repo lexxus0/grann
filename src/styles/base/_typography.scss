@@ -1,0 +1,90 @@
+$font-size-h1: 100px;
+$line-height-h1: 110px;
+
+$font-size-h2: 80px;
+$line-height-h2: 100%;
+
+$font-size-h3: 24px;
+$line-height-h3: 133%;
+
+$font-size-h1-mobile: 50px;
+$line-height-h1-mobile: 60px;
+
+$font-size-h2-mobile: 40px;
+$line-height-h2-mobile: 48px;
+
+$font-size-h3-mobile: 18px;
+$line-height-h3-mobile: 120%;
+
+h1 {
+  font-family: $third-family;
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+  font-weight: bold;
+  color: $main-brown;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-h1-mobile;
+    line-height: $line-height-h1-mobile;
+  }
+}
+
+h2 {
+  font-family: $third-family;
+  font-weight: 600;
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+  color: $main-brown;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-h2-mobile;
+    line-height: $line-height-h2-mobile;
+  }
+}
+
+h3 {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+  color: $main-brown;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-h3-mobile;
+    line-height: $line-height-h3-mobile;
+  }
+}
+
+.decor-1 {
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 126%;
+  color: $main-brown;
+}
+
+.decor-2 {
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 117%;
+  color: $main-brown;
+}
+
+p {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 133%;
+  color: $main-brown;
+}
+
+button {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 133%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $main-brown;
+}

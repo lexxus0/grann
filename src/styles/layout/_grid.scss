@@ -1,0 +1,15 @@
+$grid-columns-desktop: 12;
+$grid-columns-mobile: 4;
+
+$gutter-desktop: 30px;
+$gutter-mobile: 20px;
+
+$margin-desktop: 100px;
+$margin-mobile: 10px;
+
+@mixin grid-container($columns, $gutter, $margin) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: $gutter;
+  margin: 0 $margin;
+}

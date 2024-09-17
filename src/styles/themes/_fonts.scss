@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Jeff Script';
+  src: url('JeffScript.woff2') format('woff2'),
+    url('JeffScript.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family: 'Montserrat', sans-serif;
+$second-family: 'Jeff Script', sans-serif;
+$third-family: 'Alumni Sans', sans-serif;
