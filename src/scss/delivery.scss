@@ -58,20 +58,18 @@
     }
   }
 
-  &__img {
+  &__icon {
     margin-bottom: 24px;
+    fill: $secondary-pastel;
+
+    use {
+      width: 60px;
+      height: 60px;
+    }
 
     @media (min-width: 768px) {
       margin-bottom: 33px;
     }
-
-    @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
-      background-image: url('../img/mobDesk@2x.png');
-      }
-
-      @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
-      background-image: url('../img/bgDesk@2x.png');
-      }
   }
 
   &__title {
