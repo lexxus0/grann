@@ -12,6 +12,14 @@
     background-image: url("../img/deskPngWebp1x/bgDesk.png");
   }
 
+  @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
+    background-image: url("../img/mobPngWebp2x/bgMob2x.png");
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+    background-image: url("../img/deskPngWebp2x/bgDesk2x.png");
+  }
+
   .container {
     padding: 56px 10px;
     margin: 0 auto;
@@ -98,6 +106,15 @@
     @media (min-width: 1024px) {
       flex: 0 0 500px;
     }
+
+    &:invalid .contact-form__button {
+      background-color: rgb(235, 223, 223);
+      cursor: not-allowed;
+    }
+
+    &:valid .contact-form__button {
+      background-color: $main-pastel;
+    }
   }
 
   &__label {
@@ -143,7 +160,7 @@
 
   &__textarea {
     min-height: 180px;
-    resize: vertical;
+    resize: none;
     white-space: pre-wrap;
     overflow-wrap: break-word;
   }
