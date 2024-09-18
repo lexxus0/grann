@@ -1,0 +1,95 @@
+@import "../styles/themes/colors";
+@import "../styles/themes/_fonts";
+
+.delivery {
+  min-width: 320px;
+  background-image: url("../img/deskPngWebp1x/heroFon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 100px 10px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+    padding: 0 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      row-gap: 0;
+    }
+  }
+}
+
+.delivery-item {
+  max-width: 340px;
+
+  &:not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $secondary-pastel;
+
+    @media (min-width: 768px) {
+      padding-bottom: 0px;
+      border-bottom: none;
+      padding-right: 50px;
+      border-right: 1px solid $secondary-pastel;
+    }
+  }
+
+  &__img {
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-brown);
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 137%;
+    text-align: center;
+    color: var(--main-brown);
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
