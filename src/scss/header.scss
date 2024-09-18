@@ -1,12 +1,14 @@
 @import '../styles/themes/colors';
 
 .header {
+  border-bottom: 1px solid $secondary-white;
+
   &__inner {
+    margin: 0 auto;
     padding: 41px 10px;
     position: relative;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $secondary-white;
   }
 
   &__logo {
@@ -142,6 +144,8 @@
 
   .header {
     &__inner {
+      gap: 20px;
+
       padding-top: 50px;
       padding-bottom: 50px;
       padding-left: clamp(20px, 50px, 100px);
@@ -197,7 +201,9 @@
 
 @media screen and (min-width: 1024px) {
   .header__inner {
+    gap: 78px;
     padding-left: 100px;
     padding-right: 100px;
+    max-width: 1240px;
   }
 }
