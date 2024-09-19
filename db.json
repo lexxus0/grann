@@ -1,0 +1,303 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Торт «Веснянка»",
+      "weight": "1 кг",
+      "price": "950 грн",
+      "description": "Торт з вершками та фруктами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": true,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Торт «Шоколадка»",
+      "weight": "0.5 кг",
+      "price": "450 грн",
+      "description": "Торт з шоколадом та горіхами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Торт “Ківі-маракуйя”",
+      "weight": "1.5 кг",
+      "price": "1200 грн",
+      "description": "Торт з ківі та маракуйя",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Торт “Снікерс”",
+      "weight": "3 кг",
+      "price": "2550 грн",
+      "description": "Торт з шоколадом та горіхами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Торт “Наполеон”",
+      "weight": "1 кг",
+      "price": "1500 грн",
+      "description": "Торт з заварним кремом",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Торт “Тіраміссу”",
+      "weight": "2 кг",
+      "price": "1700 грн",
+      "description": "Торт з шоколадом та заварним кремом",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Торт “Медовик”",
+      "weight": "1.5 кг",
+      "price": "1300 грн",
+      "description": "Торт з медом та фруктами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": true,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Торт “Вафельно-горіховий”",
+      "weight": "2 кг",
+      "price": "1100 грн",
+      "description": "Торт з шоколадом та горіхами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Шоколадний торт з малиною",
+      "weight": "0.5 кг",
+      "price": "150 грн",
+      "description": "Торт з шоколадом та малиною",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": true,
+      "bestsellers": false,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Мусовий торт “Манго-маракуйя”",
+      "weight": "3 кг",
+      "price": "3200 грн",
+      "description": "Торт з манго та маракуйя",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": true,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Торт “Фісташка-малина”",
+      "weight": "3 кг",
+      "price": "3200 грн",
+      "description": "Торт з фісташками та малиною",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": true,
+      "category": "cake",
+      "image": "img/1908233603.jpg"
+    },
+
+    {
+      "id": 21,
+      "title": "Тістечко «Квіточка»",
+      "weight": "200 г",
+      "price": "50 грн",
+      "description": "Тістечко з кремом та фруктами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": true,
+      "bestsellers": 3,
+      "category": "pastries"
+    },
+    {
+      "id": 22,
+      "title": "Тістечко «Мак»",
+      "weight": "150 г",
+      "price": "30 грн",
+      "description": "Тістечко з маком та цукром",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": 10,
+      "category": "pastries"
+    },
+    {
+      "id": "1908233603",
+      "title": "Рустик",
+      "price": 460,
+      "weight": 600,
+      "calories": 2028,
+      "description": "Пироженное с открытыми коржами, творожным кремом, голубикой, грецким орехом",
+      "ingredients": [
+        "Бисквитные коржи",
+        "Творожный крем",
+        "Голубика",
+        "Грецкий орех"
+      ],
+      "category": "pastries",
+      "image": "img/1908233603.jpg"
+    },
+    {
+      "id": "8136304087",
+      "title": "Пончик",
+      "price": 99,
+      "weight": 70,
+      "calories": 320,
+      "description": "Классичесий пончик",
+      "ingredients": ["Пончик", "Посыпка", "Глазурь", "Начинка на выбор"],
+      "category": "pastries",
+      "image": "img/8136304087.jpg"
+    },
+    {
+      "id": "7477216608",
+      "title": "Чизкейк Нью-Йорк",
+      "price": 235,
+      "weight": 100,
+      "calories": 350,
+      "description": "Настоящая американская классика — нежный чизкейк из сливочно-творожной начинки с ванильной ноткой на тонкой песочно-миндальной подложке. Сверху десерт покрыт желе из абрикосового конфитюра, украшен свежей малиной и сахарной пудрой.",
+      "ingredients": [
+        "Печенье песочное",
+        "Масло сливочное",
+        "Сыр сливочный ",
+        "Сахар",
+        "Яйца",
+        "Сливки"
+      ],
+      "category": "pastries",
+      "image": "img/7477216608.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Шоколад «Мілка»",
+      "weight": "100 г",
+      "price": "20 грн",
+      "description": "Шоколад з молоком та орехами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": true,
+      "bestsellers": 2,
+      "category": "chocolates"
+    },
+    {
+      "id": 42,
+      "title": "Шоколад «Дарк»",
+      "weight": "50 г",
+      "price": "15 грн",
+      "description": "Шоколад з темним шоколадом та фруктами",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": 8,
+      "category": "chocolates"
+    },
+    {
+      "id": 61,
+      "title": "Піца «Маргарита»",
+      "weight": "300 г",
+      "price": "80 грн",
+      "description": "Піца з томатами та сирем",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": true,
+      "bestsellers": 4,
+      "category": "pizzas"
+    },
+    {
+      "id": 62,
+      "title": "Піца «Квартет»",
+      "weight": "400 г",
+      "price": "120 грн",
+      "description": "Піца з чотирма видами сиру",
+      "storage_conditions": "Помешкання при температурі 2-6°C",
+      "decoration": false,
+      "bestsellers": 12,
+      "category": "pizzas"
+    },
+    {
+      "id": "1110641351",
+      "title": "Фета",
+      "price": 790,
+      "weight": 470,
+      "calories": 1605,
+      "description": "Пицца с творожным сыром, красным соусом, рукколой",
+      "ingredients": [
+        "Тонкое тесто",
+        "Красный соус",
+        "Моцарелла",
+        "Руккола",
+        "Творожный сыр"
+      ],
+      "category": "pizza",
+      "image": "img/1110641351.jpg"
+    },
+    {
+      "id": "8671991648",
+      "title": "Рио",
+      "price": 850,
+      "weight": 550,
+      "calories": 1350,
+      "description": "Пицца с ветчиной, курицей, сладким перцем, оливками",
+      "ingredients": [
+        "Тонкое тестое",
+        "Томатный соус",
+        "Ветчина",
+        "Курица",
+        "Шампиньоны",
+        "Сладкий перец",
+        "Помидоры черри",
+        "Оливки"
+      ],
+      "category": "pizza",
+      "image": "img/8671991648.jpg"
+    },
+    {
+      "id": "8297617295",
+      "title": "Оливия",
+      "price": 750,
+      "weight": 550,
+      "calories": 1350,
+      "description": "Пицца с вялеными томатами, оливками, сыром моцарелла",
+      "ingredients": [
+        "Пышное тесто",
+        "Сметанный соус",
+        "Глазунья",
+        "Сыр моцарелла",
+        "Вяленые томаты",
+        "Оливки"
+      ],
+      "category": "pizza",
+      "image": "img/8297617295.jpg"
+    }
+  ]
+}
