@@ -1,6 +1,7 @@
 @import '../styles/themes/colors';
 @import '../styles/themes/fonts';
 @import '../styles/layout/grid';
+@import '../styles/layout/mixins';
 
 .gallery {
 	padding-top: 50px;
@@ -10,17 +11,6 @@
 	@media (max-width: 768px) {
 		@include grid-container($grid-columns-mobile, $gutter-mobile, $margin-mobile);
 	}
-}
-
-.gallery__title{
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	border: 0;
-	padding: 0;
-	clip: rect(0, 0, 0, 0);
-	clip-path: inset(50%);
-	margin: -1px;
 }
 
 .gallery__list {
@@ -51,7 +41,7 @@
 
 .gallery__img {
   width: 300px;
-  
+
 	@media (min-width: 320px) {
 		min-width: 355px;
 	}
@@ -62,24 +52,19 @@
 }
 
 .gallery__btn {
+	@include position(absolute, translateX(-50%));
+	@include font($font-family, 18px, 300, 24px, 0.02em);
+	transition: all 0.9s ease;
 	outline: none;
 	min-width: 276px;
 	height: 67px;
 	padding: 23px 0px 20px 0px;
 	background-color: $main-pastel ;
 	color: $main-brown;
-	font-family: $font-family;
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 24px;
-	letter-spacing: 0.02em;
 	text-align: center;
 	border-radius: 10px;
-	position: absolute;
 	bottom: 0%;
 	left: 50%;
-	transform: translateX(-50%);
-	transition: all 0.9s ease;
 
 	@media (min-width: 768px) {
 		min-width: 300px;
@@ -87,19 +72,16 @@
 }
 
 .gallery__span{
-	position: absolute;
+	@include flex(flex, center, center);
+	@include position(absolute, scale(0));
+      transition: opacity 0.3s ease, transform 0.3s ease;
 	top: 0;
 	right: -24px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 67px;
 	height: 67px;
 	border-radius: 50%;
 	background-color: $main-brown;
-	transform: scale(0);
 	opacity: 0;
-	transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .gallery__btn:hover .gallery__span,
