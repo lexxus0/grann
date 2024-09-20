@@ -1,0 +1,56 @@
+@import '../styles/themes/colors';
+@import '../styles/themes/fonts';
+@import '../styles/layout/grid';
+
+.gallery {
+	@include grid-container($grid-columns-desktop, $gutter-desktop, $margin-desktop);
+
+	@media (max-width: 768px) {
+		@include grid-container($grid-columns-mobile, $gutter-mobile, $margin-mobile);
+	}
+}
+
+.gallery__list {}
+
+.gallery__item {
+	position: relative;
+	padding-bottom: 23px;
+	margin-bottom: 32px;
+
+	&:last-child-of-type {
+		margin-bottom: 0px;
+	}
+}
+
+.gallery__img {
+	min-width: 300px;
+}
+
+.gallery__btn {
+	min-width: 276px;
+	height: 67px;
+	padding: 23px 0px 20px 0px;
+	background-color: $main-pastel ;
+	color: $main-brown;
+	font-family: $font-family;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.9s ease;
+}
+
+.gallery__svg{
+
+}
+
+.gallery__btn--active {
+	background-color: $main-brown;
+	color: $main-pastel;
+}
