@@ -1,47 +1,48 @@
 <header class="header">
-  <div class="header__inner">
-    <picture class="header__logo">
-      <source
-        type="image/webp"
-        srcset="
-          ../img/mobPngWebp1x/logoHeader1x.webp 1x,
-          ../img/mobPngWebp2x/logoHeader2x.webp 2x
-        "
-      />
+  <div class="header__container">
+    <div class="header__inner">
+      <picture class="header__logo">
+        <source
+          type="image/webp"
+          srcset="
+            ../img/mobPngWebp1x/logoHeader1x.webp 1x,
+            ../img/mobPngWebp2x/logoHeader2x.webp 2x
+          "
+        />
 
-      <img
-        src="../img/mobPngWebp1x/logoHeader1x.webp"
-        alt="Grann logo"
-        width="91"
-      />
-    </picture>
+        <img
+          src="../img/mobPngWebp1x/logoHeader1x.webp"
+          alt="Grann logo"
+          width="91"
+        />
+      </picture>
 
-    <nav class="desktop-navigation">
-      <a class="desktop-navigation__link" href="#">Каталог</a>
-      <a class="desktop-navigation__link" href="#">Про мене</a>
-      <a class="desktop-navigation__link" href="#">Доставка</a>
-      <a class="desktop-navigation__link" href="#">Контакти</a>
-    </nav>
+      <nav class="desktop-navigation">
+        <a class="desktop-navigation__link" href="#">Каталог</a>
+        <a class="desktop-navigation__link" href="#">Про мене</a>
+        <a class="desktop-navigation__link" href="#">Доставка</a>
+        <a class="desktop-navigation__link" href="#">Контакти</a>
+      </nav>
 
-    <ul class="header__button-list">
-      <li class="header__button-item">
-        <button class="header__menu-button js-open-menu">
-          <svg class="header__icon" width="22" height="17">
-            <use href="../img/svg/symbol-defs.svg#burgermenu" />
-          </svg>
-        </button>
-      </li>
+      <ul class="header__button-list">
+        <li class="header__button-item">
+          <button class="header__menu-button js-open-menu">
+            <svg class="header__icon" width="22" height="17">
+              <use href="../img/svg/symbol-defs.svg#burgermenu" />
+            </svg>
+          </button>
+        </li>
 
-      <li class="header__button-item">
-        <button class="header__cart-button">
-          <svg class="header__icon" width="30" height="30">
-            <use href="../img/svg/symbol-defs.svg#cart" />
-          </svg>
-        </button>
-      </li>
-    </ul>
+        <li class="header__button-item">
+          <button class="header__cart-button">
+            <svg class="header__icon" width="30" height="30">
+              <use href="../img/svg/symbol-defs.svg#cart" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
-
   <div class="mobmenu js-mobile-menu js-is-closed">
     <button class="mobmenu__close-button js-close-menu">
       <svg class="mobmenu__close-icon">

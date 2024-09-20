@@ -3,9 +3,15 @@
 .header {
   border-bottom: 1px solid $secondary-white;
 
-  &__inner {
+  &__container {
+    max-width: 1240px;
+    padding: 0 10px;
     margin: 0 auto;
-    padding: 41px 10px;
+  }
+
+  &__inner {
+    padding-top: 41px;
+    padding-bottom: 41px;
     position: relative;
     display: flex;
     align-items: center;
@@ -145,11 +151,8 @@
   .header {
     &__inner {
       gap: 20px;
-
       padding-top: 50px;
       padding-bottom: 50px;
-      padding-left: clamp(20px, 50px, 100px);
-      padding-right: clamp(20px, 50px, 100px);
     }
   }
 
@@ -202,8 +205,6 @@
 @media screen and (min-width: 1024px) {
   .header__inner {
     gap: 78px;
-    padding-left: 100px;
-    padding-right: 100px;
     max-width: 1240px;
   }
 }
