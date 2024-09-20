@@ -1,0 +1,272 @@
+@import '../styles/themes/colors';
+@import '../styles/themes/fonts';
+
+.hero {
+  position: relative;
+  height: 997px;
+  margin: 0 auto;
+  background: url(../img/svg/hero/background.svg);
+  background-size: 100% 943px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  padding-top: 35px;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.inner {
+  width: 100%;
+  max-width: 996px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// ==== SHU ==== //
+.shu-block {
+  position: absolute;
+  width: 280px;
+  height: 238px;
+  top: 6px;
+
+  &__text {
+    position: absolute;
+    top: 79px;
+
+    text-align: center;
+    color: $main-brown;
+    font-family: $second-family;
+    font-size: 36px;
+    line-height: 1.16;
+    transform: rotate(-19deg);
+  }
+
+  &__picture {
+    position: absolute;
+    left: 73px;
+  }
+
+  &__top-vector {
+    position: absolute;
+    top: 70px;
+    left: 231px;
+    fill: none;
+    stroke: $main-brown;
+    width: 18px;
+    height: 26px;
+  }
+
+  &__bottom-vector {
+    position: absolute;
+    left: 142px;
+    bottom: 31px;
+    fill: none;
+    stroke: $main-brown;
+    width: 63px;
+    height: 20px;
+  }
+}
+// ========================= //
+
+// ==== Mousse cake block ==== //
+
+.mousse-block {
+  position: absolute;
+  top: 317px;
+  width: 584px;
+
+  &__text {
+    display: block;
+    position: absolute;
+    top: 79px;
+
+    text-align: center;
+    color: $main-brown;
+    font-family: $second-family;
+    font-size: 36px;
+    line-height: 1.16;
+    transform: rotate(-19deg);
+  }
+
+  &__picture {
+    width: 400px;
+    height: auto;
+
+    position: absolute;
+    top: 100px;
+    left: 20px;
+
+    transform: rotate(-15deg);
+  }
+}
+// ========================= //
+
+// ==== Mixer block ==== //
+.mixer-block {
+  position: absolute;
+  top: 31px;
+  left: 265px;
+
+  width: 384px;
+  height: 594px;
+
+  &__picture {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    width: 369px;
+
+    z-index: 1;
+  }
+
+  &__left-vector {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    fill: none;
+    stroke: $main-brown;
+    width: 58px;
+    height: 125px;
+  }
+
+  &__right-vector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: none;
+    stroke: $main-brown;
+    width: 71px;
+    height: 118px;
+  }
+}
+
+// ========================= //
+
+// ==== Tart block ==== //
+.tart-block {
+  position: absolute;
+  top: 18px;
+  left: 648px;
+  width: 358px;
+  height: 442px;
+
+  &__text {
+    position: absolute;
+    top: 112px;
+    left: 148px;
+    display: block;
+    width: 140px;
+
+    transform: rotate(22deg);
+
+    color: $main-brown;
+    text-align: center;
+    font-family: $second-family;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
+  &__picture {
+    position: absolute;
+  }
+
+  &__left-vector {
+    position: absolute;
+    top: 278px;
+    left: 30px;
+    fill: none;
+    stroke: $main-brown;
+
+    width: 25px;
+    height: 75px;
+  }
+
+  &__top-left-vector {
+    position: absolute;
+    top: 196px;
+    left: 70px;
+    fill: none;
+    stroke: $main-brown;
+
+    width: 15px;
+    height: 19px;
+  }
+
+  &__right-vector {
+    position: absolute;
+    top: 236px;
+    left: 265px;
+    fill: none;
+    stroke: $main-brown;
+
+    width: 9px;
+    height: 32px;
+  }
+
+  &__top-right-vector {
+    position: absolute;
+    top: 184px;
+    left: 96px;
+    fill: $main-brown;
+    stroke: $main-brown;
+
+    width: 6px;
+    height: 15px;
+  }
+
+  &__bottom-text {
+    position: absolute;
+    left: 55px;
+    bottom: -55px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.37;
+  }
+}
+// ========================= //
+
+// ==== Socials block ==== //
+
+.socials-list {
+  position: absolute;
+  top: 632px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+  }
+
+  &__icon {
+    fill: $main-brown;
+    width: 24px;
+    height: 24px;
+
+    transition: all 150ms linear;
+  }
+
+  &__item:is(:hover, :focus) &__icon {
+    transform: scale(1.3);
+  }
+}
