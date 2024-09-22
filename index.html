@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/grann/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/grann/assets/index-BCHuK6m8.css">
+  <link rel="stylesheet" crossorigin href="/grann/assets/index-DnhhkMQt.css">
 </head>
 
 <body>
@@ -111,7 +111,38 @@
     
     
     
-    
+    <section class="contact-form">
+  <div class="container">
+    <div class="contact-form__content">
+      <div class="contact-form__description">
+        <h4 class="contact-form__title">Давайте зробимо щось унікальне
+          разом!</h4>
+
+        <p class="contact-form__text">Ви можете замовити свій власний рецепт
+          десерту, який вам буде до вподоби. Заповніть заявку та я зв’яжусь з
+          вами, аби обговорити деталі замовлення.</p>
+      </div>
+
+      <form class="contact-form__form" name="contact-form">
+        <label class="contact-form__label"><input class="contact-form__input"
+            type="text" placeholder="Олександра Сергіївна" name="contact-form__name"
+            required></label>
+
+        <label class="contact-form__label"><input class="contact-form__input"
+            type="tel" placeholder="Номер телефону" name="contact-form__phone" value="+38"
+            pattern="\d{3} \d{3} \d{4}"
+            required></label>
+
+        <textarea
+          class="contact-form__textarea" name="contact-form__wishes"
+          placeholder="Опишіть ваші побажання:" maxlength="1000"
+          required></textarea>
+
+        <button class="contact-form__button" type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+</section>
     
     
   </main>
