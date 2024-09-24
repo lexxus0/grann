@@ -2,16 +2,53 @@
 @import "../styles/themes/_fonts";
 
 .delivery {
+  width: 100%;
+  height: 100%;
+  position: relative;
   min-width: 320px;
-  background-image: url("../img/deskPngWebp1x/heroFon.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 50px 0 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: 920px) {
+    padding-bottom: 60px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1010px;
+    top: 0px;
+    background-image: url("../img/deskPngWebp1x/vector-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, left;
+    z-index: -1;
+
+    @media (min-width: 768px) {
+      top: -100px;
+    }
+
+    @media (min-width: 1350px) {
+      height: 857px;
+    }
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 1024px) {
+      background-image: url("../img/deskPngWebp1x/vector-fon.png");
+    }
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 1350px) {
+      background-image: url("../img/deskPngWebp2x/vector-fonx2.png");
+    }
+  }
 
   .container {
-    max-width: 1230px;
+    max-width: 1050px;
     margin: 0 auto;
-    padding: 100px 10px;
+    padding: 0px 10px;
   }
 
   &__title {
@@ -37,7 +74,12 @@
       column-gap: 32px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1350px) {
+      flex-wrap: nowrap;
+    }
+
+    @media (min-width: 1440px) {
+      flex-wrap: nowrap;
       row-gap: 0;
     }
   }
@@ -45,6 +87,7 @@
 
 .delivery-item {
   max-width: 340px;
+  text-align: center;
 
   &:not(:last-child) {
     padding-bottom: 24px;
@@ -59,7 +102,9 @@
   }
 
   &__icon {
-    margin-bottom: 24px;
+    width: 86px;
+    height: 86px;
+    margin-bottom: 22px;
     fill: $secondary-pastel;
 
     use {
