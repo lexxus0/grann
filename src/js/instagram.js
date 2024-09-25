@@ -1,7 +1,7 @@
 import Swiper from "swiper/bundle";
 
 const swiperInsta = new Swiper('.insta-swiper', {
-    loop: true,
+    loop:true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     keyboard: {
@@ -9,12 +9,19 @@ const swiperInsta = new Swiper('.insta-swiper', {
         onlyInViewport: false,
     },
     navigation: {
-        nextEl: '.insta__swipBtn--right',
-        prevEl: '.insta__swipBtn--left',
+        nextEl: '.insta__swipBtn--next',
+        prevEl: '.insta__swipBtn--prev',
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination.insta__swiperPagination",
         clickable: true,
+    },
+        on: {
+        init: function () {
+            console.log('Swiper initialized');
+            console.log('Next button element:', document.querySelector('.insta__swipBtn--next'));
+            console.log('Prev button element:', document.querySelector('.insta__swipBtn--prev'));
+        },
     },
 });
 

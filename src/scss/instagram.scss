@@ -17,36 +17,54 @@
 }
 
 .swiper.insta-swiper{
-	// @media (min-width:768px) {
-	// 	display: none;
-	// }
+	@media (min-width:768px) {
+		display: none;
+	}
 }
 
-.insta__list{
-	display: none;
-	
-	// @media (min-width:768px) {
-	// 	display: grid;
-	// 	grid-template-columns: repeat(3, 1fr);
-	// 	gap: 30px;
-	// }
+.swiper-slide.insta__itemSwiper {
+	max-width: 261px;
 }
 
-.insta__swipPaginationContainer {
-	display: flex;
+.insta__imgSwiper{
+	width: 261px;
+	height: 261px;
 }
 
-.swiper-pagination {
+.insta__swiperPaginationContainer{
+	padding: 24px 0px 32px 0px ;
+	@include flex(flex, space-between, center)
+}
+
+.insta__btnSwiper{
+	outline: none;
+	width: 76px;
+	height: 27px;
+	text-align: center;
+	border: 1px solid $main-brown;
+	border-radius: 25px;
+
+	&:hover, &:focus{
+		background-color:$main-pastel ;
+	}
+}
+
+.insta__svgSwiper{
+      width: 41px;
+	height: 27px;
+	fill: $main-brown;
+}
+
+.swiper-pagination.insta__swiperPagination {
 	z-index: 10;
-	display: flex;
-	justify-content: center;
+	display: inline-flex;
 	align-items: center;
 }
 
 .swiper-pagination-bullet {
-	width: 10px;
-	height: 10px;
-	background-color: #999;
+	width: 11px;
+	height: 11px;
+	background-color: $main-pastel;
 	margin: 0 5px;
 	border-radius: 50%;
 	opacity: 0.5;
@@ -54,11 +72,16 @@
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #333;
+	background-color: $main-brown;
 	opacity: 1;
 }
 
+.insta__list {
+	display: none;
 
-.swiper-slide{
-	width: 261px; 
+	@media (min-width:768px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
 }
