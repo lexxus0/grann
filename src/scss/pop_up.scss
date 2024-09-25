@@ -1,0 +1,166 @@
+@import "../styles/themes/colors";
+@import "../styles/themes/_fonts";
+
+#pop-up_thanks {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background: rgba(44, 40, 38, 0.89);
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  cursor: pointer;
+
+  &.is-open {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.pop-up {
+  &_thanks {
+    min-width: 320px;
+    width: 100%;
+  }
+
+  &__container {
+    max-width: 1244px;
+    padding: 77px 10px 57px;
+    margin: auto;
+    position: relative;
+    background-color: $main-white;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: default;
+
+    @media (min-width: 1024px) {
+      width: 1244px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      width: 820px;
+      padding: 80px 0 100px;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      width: 182px;
+      height: 152px;
+      object-fit: cover;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 1024px) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: -18px;
+        width: 256px;
+        height: 96px;
+        transform: rotate(16deg);
+        background-image: url("../img/deskPngWebp1x/with-love.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100%;
+    text-align: center;
+    color: $main-brown;
+    margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 34px;
+      font-size: 100px;
+      line-height: 110%;
+    }
+  }
+
+  &__text {
+    max-width: 670px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 137%;
+    text-align: center;
+    color: $main-brown;
+    margin-bottom: 32px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 90px;
+      font-size: 18px;
+      line-height: 133%;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 16px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+
+    @media (min-width: 1024px) {
+      width: 370px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 395px;
+    }
+  }
+
+  &__btn_close {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: $main-brown;
+
+      &:hover {
+        fill: $main-brown-hover;
+      }
+    }
+  }
+}
