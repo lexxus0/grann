@@ -1,9 +1,40 @@
 @import "swiper/css";
-.insta__swipPaginationContainer{
-	display: flex;
+@import '../styles/themes/colors';
+@import '../styles/themes/fonts';
+@import '../styles/layout/grid';
+@import '../styles/layout/mixins';
+
+.insta{
+	place-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include grid-container(1, $gutter-desktop, $margin-desktop);
+
+	@media (max-width: 768px) {
+		@include grid-container(1, $gutter-mobile, $margin-mobile);
+	}
+
 }
 
+.swiper.insta-swiper{
+	// @media (min-width:768px) {
+	// 	display: none;
+	// }
+}
 
+.insta__list{
+	display: none;
+	
+	// @media (min-width:768px) {
+	// 	display: grid;
+	// 	grid-template-columns: repeat(3, 1fr);
+	// 	gap: 30px;
+	// }
+}
+
+.insta__swipPaginationContainer {
+	display: flex;
+}
 
 .swiper-pagination {
 	z-index: 10;
@@ -26,6 +57,7 @@
 	background-color: #333;
 	opacity: 1;
 }
+
 
 .swiper-slide{
 	width: 261px; 

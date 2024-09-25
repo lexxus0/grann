@@ -17,3 +17,4 @@ const swiperInsta = new Swiper('.insta-swiper', {
         clickable: true,
     },
 });
+
