@@ -6,8 +6,8 @@
 
 .insta{
 	place-items: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	@include grid-container(1, $gutter-desktop, $margin-desktop);
 
 	@media (max-width: 768px) {
@@ -33,7 +33,7 @@
 
 .insta__swiperPaginationContainer{
 	padding: 24px 0px 32px 0px ;
-	@include flex(flex, space-between, center)
+	@include flex(flex, space-between, center);
 }
 
 .insta__btnSwiper{
@@ -84,4 +84,56 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
 	}
+}
+
+.insta__btnContainer{
+     position: relative;
+     @include flex(flex, center, center);
+     min-width: 780px;
+     padding-top: 46px;
+}
+
+.insta__btn{
+	border: 2px solid transparent;
+	color: $main-brown;
+      width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $main-pastel;
+	border-radius: 10px;
+	outline: none;
+	&:hover,&:focus {
+	 border: 2px solid $main-brown;
+	}
+
+	@media (min-width:768px) {
+	max-width: 604px;
+	}
+}
+
+.insta__svgContainer{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.insta__Vector36{
+	fill: none;
+	stroke: $main-brown;
+	width: 76px;
+	height: 90px;
+}
+
+.insta__Vector34{
+	fill: none;
+	stroke: $main-brown;
+	width: 26px;
+	height: 24px;
+}
+
+.insta__Vector35{
+	fill: none;
+	stroke: $main-brown;
+	width: 23px;
+	height: 9px;
 }
