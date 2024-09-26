@@ -1,0 +1,151 @@
+@import "swiper/css";
+@import '../styles/themes/colors';
+@import '../styles/themes/fonts';
+@import '../styles/layout/grid';
+@import '../styles/layout/mixins';
+
+.insta{
+	place-items: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@include grid-container(1, $gutter-desktop, $margin-desktop);
+
+	@media (max-width: 768px) {
+		@include grid-container(1, $gutter-mobile, $margin-mobile);
+	}
+
+}
+
+.swiper.insta-swiper{
+	@media (min-width:768px) {
+		display: none;
+	}
+}
+
+.swiper-slide.insta__itemSwiper {
+	max-width: 261px;
+}
+
+.insta__imgSwiper{
+	width: 261px;
+	height: 261px;
+}
+
+.insta__swiperPaginationContainer{
+	padding: 24px 0px 32px 0px ;
+	@include flex(flex, space-between, center);
+}
+
+.insta__btnSwiper{
+	outline: none;
+	width: 76px;
+	height: 27px;
+	text-align: center;
+	border: 1px solid $main-brown;
+	border-radius: 25px;
+
+	&:hover, &:focus{
+		background-color:$main-pastel ;
+	}
+}
+
+.insta__svgSwiper{
+      width: 41px;
+	height: 27px;
+	fill: $main-brown;
+}
+
+.swiper-pagination.insta__swiperPagination {
+	z-index: 10;
+	display: inline-flex;
+	align-items: center;
+}
+
+.swiper-pagination-bullet {
+	width: 11px;
+	height: 11px;
+	background-color: $main-pastel;
+	margin: 0 5px;
+	border-radius: 50%;
+	opacity: 0.5;
+	transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $main-brown;
+	opacity: 1;
+}
+
+.insta__list {
+	display: none;
+
+	@media (min-width:768px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
+}
+
+.insta__btnContainer{
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     position: relative;
+     padding-top: 46px;
+     @media (min-width:1024px) {
+	width: 780px;
+     }
+}
+
+.insta__btn{
+	border: 2px solid transparent;
+	color: $main-brown;
+      width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $main-pastel;
+	border-radius: 10px;
+	outline: none;
+	&:hover,&:focus {
+	 border: 2px solid $main-brown;
+	}
+
+	@media (min-width:1024px) {
+	margin-left: 126px;
+	max-width: 604px;
+	}
+}
+
+.insta__svg{
+      display: none;
+	fill: none;
+	stroke: $main-brown;
+
+	@media (min-width:1024px) {
+		display: block;
+	}
+}
+
+.insta__Vector36{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 76px;
+	height: 90px;
+}
+
+.insta__svgVector3435 {
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+.insta__Vector34{
+	width: 26px;
+	height: 24px;
+}
+
+.insta__Vector35{
+	width: 23px;
+	height: 12px;
+}
