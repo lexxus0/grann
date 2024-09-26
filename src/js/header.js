@@ -2,6 +2,7 @@ const refs = {
   openMenuButton: document.querySelector('.js-open-menu'),
   closeMenuButton: document.querySelector('.js-close-menu'),
   mobileMenu: document.querySelector('.js-mobile-menu'),
+  body: document.body,
 };
 
 refs.openMenuButton.addEventListener('click', handleOpenMenu);
@@ -17,6 +18,8 @@ function handleOpenMenu() {
   refs.mobileMenu.classList.add('js-is-opened');
 
   refs.mobileMenu.classList.remove('js-is-closed');
+
+  refs.body.classList.add('no-scroll');
 }
 
 function handleCloseMenu() {
@@ -27,4 +30,6 @@ function handleCloseMenu() {
   refs.openMenuButton.addEventListener('click', handleOpenMenu);
 
   refs.openMenuButton.removeEventListener('click', handleCloseMenu);
+
+  refs.body.classList.remove('no-scroll');
 }

@@ -80,6 +80,7 @@
   top: 0;
 
   background-color: $main-brown;
+  z-index: 1000;
 
   &__close-button {
     width: 32px;
@@ -140,6 +141,10 @@
       font-weight: 500;
     }
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 // ==========================//
 
