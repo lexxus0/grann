@@ -1,23 +1,23 @@
-@import "../styles/themes/colors";
-@import "../styles/themes/_fonts";
+@import '../styles/themes/colors';
+@import '../styles/themes/_fonts';
 
 .contact-form {
   min-width: 320px;
-  background-image: url("../img/mobPngWebp1x/bgMob.png");
+  background-image: url('../img/mobPngWebp1x/bgMob.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-width: 768px) {
-    background-image: url("../img/deskPngWebp1x/bgDesk.png");
+    background-image: url('../img/deskPngWebp1x/bgDesk.png');
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
-    background-image: url("../img/mobPngWebp2x/bgMob2x.png");
+    background-image: url('../img/mobPngWebp2x/bgMob2x.png');
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
-    background-image: url("../img/deskPngWebp2x/bgDesk2x.png");
+    background-image: url('../img/deskPngWebp2x/bgDesk2x.png');
   }
 
   .container {
@@ -144,14 +144,6 @@
       outline-color: $main-brown;
       box-shadow: 0 0 15px #918b8b;
     }
-
-    // &:valid {
-    //   border-color: green;
-    // }
-
-    // &:invalid {
-    //   border-color: red;
-    // }
 
     @media (min-width: 1024px) {
       font-size: 18px;

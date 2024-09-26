@@ -4,13 +4,14 @@
 @import '../styles/layout/mixins';
 
 .gallery {
+	place-items: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	@include grid-container(1, $gutter-desktop, $margin-desktop);
 	@media (max-width: 768px) {
 		@include grid-container(1, $gutter-mobile, $margin-mobile);
 	}
-	place-items: center;
+	
 }
 
 .gallery__list {
