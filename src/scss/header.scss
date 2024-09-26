@@ -47,6 +47,7 @@
   }
 
   &__cart-button {
+    display: block;
     padding: 3.5px 8px;
     border-radius: 10px;
     transition: all 150ms linear;
@@ -72,11 +73,11 @@
 // ===== MOBILE MENU STYLES ===== //
 
 .mobmenu {
-  width: 100vw;
+  width: 100%;
   padding: 100px 40px 40px 40px;
 
   position: fixed;
-  height: 100vh;
+  height: 100%;
   top: 0;
 
   background-color: $main-brown;
@@ -111,7 +112,7 @@
 
   &__picture {
     display: block;
-    width: 206px;
+    max-width: 206px;
     margin: 0 auto;
   }
 }
