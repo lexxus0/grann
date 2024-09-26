@@ -87,10 +87,14 @@
 }
 
 .insta__btnContainer{
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
      position: relative;
-     @include flex(flex, center, center);
-     min-width: 780px;
      padding-top: 46px;
+     @media (min-width:1024px) {
+	width: 780px;
+     }
 }
 
 .insta__btn{
@@ -106,34 +110,42 @@
 	 border: 2px solid $main-brown;
 	}
 
-	@media (min-width:768px) {
+	@media (min-width:1024px) {
+	margin-left: 126px;
 	max-width: 604px;
 	}
 }
 
-.insta__svgContainer{
-	position: absolute;
-	top: 0;
-	left: 0;
+.insta__svg{
+      display: none;
+	fill: none;
+	stroke: $main-brown;
+
+	@media (min-width:1024px) {
+		display: block;
+	}
 }
 
 .insta__Vector36{
-	fill: none;
-	stroke: $main-brown;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 76px;
 	height: 90px;
 }
 
+.insta__svgVector3435 {
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
 .insta__Vector34{
-	fill: none;
-	stroke: $main-brown;
 	width: 26px;
 	height: 24px;
 }
 
 .insta__Vector35{
-	fill: none;
-	stroke: $main-brown;
 	width: 23px;
-	height: 9px;
+	height: 12px;
 }
