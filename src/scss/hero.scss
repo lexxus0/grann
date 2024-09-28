@@ -97,7 +97,8 @@
 .mixer-block {
   position: absolute;
   top: 36px;
-  left: 90px;
+  left: 50%;
+  transform: translate(-50%);
 
   width: 152px;
   height: 228px;
@@ -254,12 +255,13 @@
 }
 
 // ========================= //
+// ========= TABLET ======== //
+// ========================= //
 
 @media screen and (min-width: 768px) {
   .hero {
     height: 727px;
     background-size: 110% 727px;
-    background-repeat: no-repeat;
   }
 
   .container {
@@ -343,7 +345,6 @@
   // ==== Mixer block ==== //
   .mixer-block {
     top: 0px;
-    left: 220px;
 
     width: 246px;
     height: 380px;
@@ -433,6 +434,197 @@
   .socials-list {
     top: 370px;
     right: 20px;
+
+    &__item {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+// ========================= //
+// ======== DESKTOP ======== //
+// ========================= //
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 1097px;
+    background-size: 115% 1097px;
+  }
+
+  .container {
+    max-width: 1360px;
+  }
+
+  .title {
+    font-size: 100px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+
+  .inner {
+    max-width: 1012px;
+    height: 640px;
+  }
+
+  // ==== Shu block ==== //
+  .shu-block {
+    max-width: 280px;
+    height: 238px;
+    left: 25px;
+
+    &__text {
+      top: 100px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+
+    &__picture {
+      top: 0;
+      left: 54px;
+      width: 100%;
+    }
+
+    &__top-vector {
+      top: 70px;
+      left: 212px;
+
+      width: 19px;
+      height: 27px;
+    }
+
+    &__bottom-vector {
+      top: 186px;
+      left: 123px;
+
+      width: 64px;
+      height: 22px;
+    }
+  }
+  // ========================= //
+
+  // ==== Mousse cake block ==== //
+  .mousse-block {
+    top: 311px;
+    width: 300px;
+
+    &__text {
+      left: 10px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+
+    &__picture {
+      top: 6px;
+      left: 56px;
+      max-width: 490px;
+    }
+  }
+  // ========================= //
+
+  // ==== Mixer block ==== //
+  .mixer-block {
+    width: 384px;
+    height: 594px;
+
+    &__picture {
+      max-width: 369px;
+      top: 14px;
+      left: 16px;
+    }
+
+    &__left-vector {
+      top: 143px;
+      left: -8px;
+
+      width: 59px;
+      height: 126px;
+    }
+
+    &__right-vector {
+      width: 72px;
+      height: 119px;
+
+      top: 0;
+      right: 0;
+    }
+  }
+
+  // ========================= //
+
+  // ==== Tart block ==== //
+  .tart-block {
+    right: -40px;
+
+    width: 358px;
+    height: 442px;
+
+    &__text {
+      top: 135px;
+      left: 155px;
+      bottom: unset;
+      width: 140px;
+
+      font-size: 36px;
+      line-height: 1.17;
+    }
+
+    &__picture {
+      top: 2px;
+      left: 0;
+    }
+
+    &__left-vector {
+      top: 278px;
+      left: 30px;
+
+      width: 25px;
+      height: 76px;
+    }
+
+    &__top-left-vector {
+      top: 196px;
+      left: 70px;
+
+      width: 16px;
+      height: 20px;
+    }
+
+    &__right-vector {
+      top: 236px;
+      left: 266px;
+
+      width: 12px;
+      height: 32px;
+    }
+
+    &__top-right-vector {
+      top: 184px;
+      left: 96px;
+
+      width: 6px;
+      height: 16px;
+    }
+
+    &__bottom-text {
+      top: 453px;
+      font-size: 16px;
+      line-height: 1.38;
+    }
+  }
+  // ========================= //
+
+  // ==== Socials block ==== //
+
+  .socials-list {
+    top: 600px;
+    right: 20px;
+    gap: 20px;
 
     &__item {
       width: 24px;
