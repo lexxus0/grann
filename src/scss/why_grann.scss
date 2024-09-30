@@ -1,0 +1,255 @@
+.section-whygrann {
+  min-width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px;
+}
+
+@media (min-width: 768px) {
+  .img-des {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-des {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-whygrann {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+
+.back-image {
+  background-image: url('../img/deskPngWebp1x/whygrann-background.png');
+
+  background-position: top;
+  width: 100%;
+}
+
+.container-whygrann {
+  margin: 0 auto;
+  max-width: 375px;
+
+  @media (min-width: 768px) {
+    max-width: 1024px;
+  }
+}
+.container-whygrann {
+  margin: 0 auto;
+  max-width: 335px;
+}
+@media (min-width: 768px) {
+  .container-whygrann {
+    max-width: 1024px;
+    text-align: center;
+  }
+}
+.section-title {
+  font-family: Alumni Sans;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;
+  padding-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 100px;
+    line-height: 110px;
+    margin-bottom: 50px;
+  }
+}
+.content {
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.description-box {
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .description-box {
+    width: 45%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description-box {
+    width: 45%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.description-title {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .description-title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+.description {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .description {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+.two {
+  padding-top: 10px;
+}
+.why-mobile-img {
+  width: 355px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .why-mobile-img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .image-container-1 {
+    position: relative;
+  }
+  .image-container-2 {
+    position: relative;
+  }
+  .image-container-3 {
+    position: relative;
+  }
+  .image-container-4 {
+    position: relative;
+  }
+
+  .image-des {
+    position: absolute;
+    top: -95px;
+    left: -25px;
+    background-image: url('../img/deskPngWebp2x/whyDesk2x.webp');
+    background-size: cover;
+    background-position: center;
+    width: 320px;
+    height: 375px;
+  }
+
+  .vector-line-left {
+    position: absolute;
+    bottom: 140px;
+    right: -60px;
+    width: 50%;
+    height: auto;
+    z-index: 10;
+    fill: none;
+    stroke: #705a66;
+    stroke-width: 3;
+    border: 3px;
+  }
+  .vector-line-right {
+    position: absolute;
+    top: 170px;
+    left: 1px;
+    width: 50%;
+    height: auto;
+    z-index: 10;
+    fill: none;
+    stroke: #705a66;
+    stroke-width: 3;
+  }
+  .vector-line-center {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-des {
+    position: absolute;
+    top: -132px;
+    left: 1px;
+    background-image: url('../img/deskPngWebp2x/whyDesk2x.webp');
+    background-size: cover;
+    background-position: center;
+    width: 360px;
+    height: 550px;
+  }
+
+  .vector-line-left {
+    position: absolute;
+    bottom: 140px;
+    right: -60px;
+    width: 162px;
+    height: auto;
+    z-index: 10;
+    fill: none;
+    stroke: #705a66;
+    stroke-width: 3;
+    border: 3px;
+  }
+  .vector-line-right {
+    position: absolute;
+    top: 270px;
+    left: 1px;
+    width: 165px;
+    height: 97px;
+    z-index: 10;
+    fill: none;
+    stroke: #705a66;
+    stroke-width: 3;
+  }
+  .vector-line-center {
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 60px;
+    width: 24px;
+    height: 85px;
+    z-index: 10;
+    fill: none;
+    stroke: #705a66;
+    stroke-width: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .svg-element,
+  .vector-line-center,
+  .vector-line-right,
+  .vector-line-left,
+  .image-container-2 {
+    display: none;
+  }
+}
