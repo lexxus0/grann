@@ -1,0 +1,219 @@
+@import "../styles/themes/colors";
+@import "../styles/themes/_fonts";
+
+.bestsellers {
+  min-width: 320px;
+  padding: 50px 10px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 60px 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 80px 0 80px 25px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__slider_mobile {
+    position: relative;
+    margin-bottom: 32px;
+    height: 1060px;
+
+    @media (min-width: 768px) {
+      &.swiper {
+        display: none;
+      }
+    }
+
+    &-wrapper.swiper-wrapper {
+      margin: 0 auto;
+    }
+
+    &-slide_mobile.swiper-slide {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+
+    &-buttons {
+      position: absolute;
+      width: 100%;
+      height: 27px;
+      bottom: 0px;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &-btn_prev.swiper-button-prev,
+    &-btn_next.swiper-button-next {
+      position: static;
+      min-width: 76px;
+      height: 27px;
+      margin-top: 0;
+      border: 1px solid $main-brown;
+      border-radius: 22px;
+
+      &:hover {
+        background-color: $main-pastel;
+      }
+
+      svg {
+        width: 41px;
+        fill: $main-brown;
+      }
+    }
+
+    &-pagination.swiper-pagination {
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 27px;
+
+      .swiper-pagination-bullet {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: $main-pastel;
+        border-radius: 50%;
+        margin: 0 8px;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $main-brown;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-btn {
+      padding: 10px 38px;
+      border-radius: 10px;
+      background-color: $main-pastel;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 133%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-align: center;
+      color: $main-brown;
+
+      &:hover {
+        background-color: $secondary-pastel;
+      }
+    }
+  }
+}
+
+.bestsellers__slider.swiper {
+  display: none;
+  position: relative;
+  margin-bottom: 82px;
+  height: 570px;
+  padding-top: 50px;
+  padding-left: 7%;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+// .bestsellers__slider-slide.swiper-slide {
+//   min-width: 300px;
+
+//   @media (min-width: 1024px) {
+//     min-width: 393px;
+//   }
+
+//   @media (min-width: 1440px) {
+//     min-width: 415px;
+//   }
+// }
+
+.bestsellers__slider {
+  &-buttons {
+    position: absolute;
+    width: 170px;
+    height: 27px;
+    top: 0px;
+    right: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    @media (min-width: 1024px) {
+      width: 187px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 200px;
+    }
+  }
+
+  &-btn_prev.swiper-button-prev,
+  &-btn_next.swiper-button-next {
+    position: static;
+    min-width: 60px;
+    height: 27px;
+    margin-top: 0;
+    border: 1px solid $main-brown;
+    border-radius: 20px;
+
+    @media (min-width: 1024px) {
+      min-width: 76px;
+      border-radius: 22px;
+    }
+
+    @media (min-width: 1440px) {
+      min-width: 85px;
+      border-radius: 25px;
+    }
+
+    &:hover {
+      background-color: $main-pastel;
+    }
+
+    svg {
+      width: 40px;
+      fill: $main-brown;
+
+      @media (min-width: 1024px) {
+        width: 42px;
+      }
+
+      @media (min-width: 1440px) {
+        width: 50px;
+      }
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  &::after {
+    display: none;
+  }
+}
