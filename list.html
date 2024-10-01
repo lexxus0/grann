@@ -8,6 +8,86 @@
 </head>
 
 <body>
+  <header class="header">
+  <div class="header__container">
+    <div class="header__inner">
+      <picture class="header__logo">
+        <source
+          type="image/webp"
+          srcset="data:image/webp;base64,UklGRpIEAABXRUJQVlA4WAoAAAAQAAAAWgAATgAAQUxQSEoBAAABkHNb27FHd2zbtm3bTn6ErQ6VVaWyjbFt27btmfepgue+n34iYgIAqVZG9/zh2/dP7p0qtgOhKmYuvGNrS38uNNmII+kK2/DnOnMxmM+wTX1WJILAt2yz+1XIpb9im7+sQSz8G+O5jVbAS8Z3VIaQ0T3Gu4zQGOP+xYVM2h9+bEaWiMxuhvB3CJEwhnI3kRkcn01IqP3EwcpJxDKkKzIU2rB8lSMgsx2L5EQATqLJJyDzGAtrovACTbPIWv6XpJnCUzQVBOAEFimTgMwcFuZOADqwPJelEI9lJ1BU/YWknASM4/hkTCNMQjEPNGUOoQghAhEYZoCqzDi/rzZkQP85t0Yg7POSUx+QTvzGZYsaLUj8ymFFA6j7Pdi0ARCg+eTmPM0HMaZf2djnVm0QpWLK1vfrkH5cqzYAoepm9e44cu3BmR2DZW5ygBZWUDggIgMAANAPAJ0BKlsATwA+nUKcSrIpIqMmeAz4sBOJYwDP9aY28HO8aaq2PrQK32Wxpqpovjl+pOBV6Ep7T8p7xsylpKAhCFP6AbLy6P/VpmkjLWojdy6x9JmL9R8LeN4fvyq7zufdHreIFKukSirHW/T1gj4TTnAddJvJu0y+I4JATLLSK4CLfLCTAAD++50bj3P7+d20uTYJEDyZ5NyyGflVtf/Txiq8uk91gg78oBsS81ym4wvL+83y04U5bbCOT57maubne0wsM0RQNNh+KlBgfg5xdAxHpUZpDdEZ9EEA2rtf42RI9rflGf+uqyNWTbtQYzCpkhp0gw2ymFGkvCv6QGWMJqKCWgKfOK0snzn7YnaL0NaUAm4YmYzJwZIHZeNEyiaRGmLqkA0qRW5OelMHI3/pHmvBQnf95zv9AYzz+2XgQNNn6rZSxDCycHad9RiKIFd1F2Sgp8F/x1e4zPMEj3kf75NCWIdnpWlQov9NwqfRsU8ZNCTEVxxh9CL/MTvNoOyvS9ZAk+f7Sd+P0RwpXMXpt82Pcn6E8ndpYAIXIUNVTvBGHx0D0VS4pE771j18xceZ7O/2rSgCT0FuasVCf4BiX/+z/uZlwBkKEn4wN1HxZt5zIGJb6GvGChuGZ0SnoLbuUA/Fh2IBkQWAl0p+qrSCeYMZqlthDgy0Rw4fIQj/06LbrVOtA3nOS1O8bDSbxv4D7DYeZOlsjwEgrKJuIW2lhGoqlCda67h4FshnHXPpsB/2RDy1jhNHn7HSJFnFXOOXKd1VfiN9ThhF5oAfIzRvAQ1bSzDVoW7wRzglaogmKqRXoBQcjdTI6VPHhWjgtzD0aELOTZK5wJ+yuVvi8N7mq2m9T++A7oYEv9wbWgFIZdSwxKV00LBI2vnVgRRIOzY8c3O1uHA6EPxIy7rLBPonIC6+9a+sNnk5A8TMnhRoCW9UwiyG5mmTb4hz0Fp3m2XRKznWS3JGjRM/wB746XjQf7vaRm0cGuAroWsvqHmZINfkwEVLRicTmuKpei4yZkacIsJDy5DkBnCUoXKk3oHq57J6gocuOi+L/1+Dr9LaAAA= 1x, data:image/webp;base64,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 2x"
+        />
+
+        <img
+          src="data:image/webp;base64,UklGRpIEAABXRUJQVlA4WAoAAAAQAAAAWgAATgAAQUxQSEoBAAABkHNb27FHd2zbtm3bTn6ErQ6VVaWyjbFt27btmfepgue+n34iYgIAqVZG9/zh2/dP7p0qtgOhKmYuvGNrS38uNNmII+kK2/DnOnMxmM+wTX1WJILAt2yz+1XIpb9im7+sQSz8G+O5jVbAS8Z3VIaQ0T3Gu4zQGOP+xYVM2h9+bEaWiMxuhvB3CJEwhnI3kRkcn01IqP3EwcpJxDKkKzIU2rB8lSMgsx2L5EQATqLJJyDzGAtrovACTbPIWv6XpJnCUzQVBOAEFimTgMwcFuZOADqwPJelEI9lJ1BU/YWknASM4/hkTCNMQjEPNGUOoQghAhEYZoCqzDi/rzZkQP85t0Yg7POSUx+QTvzGZYsaLUj8ymFFA6j7Pdi0ARCg+eTmPM0HMaZf2djnVm0QpWLK1vfrkH5cqzYAoepm9e44cu3BmR2DZW5ygBZWUDggIgMAANAPAJ0BKlsATwA+nUKcSrIpIqMmeAz4sBOJYwDP9aY28HO8aaq2PrQK32Wxpqpovjl+pOBV6Ep7T8p7xsylpKAhCFP6AbLy6P/VpmkjLWojdy6x9JmL9R8LeN4fvyq7zufdHreIFKukSirHW/T1gj4TTnAddJvJu0y+I4JATLLSK4CLfLCTAAD++50bj3P7+d20uTYJEDyZ5NyyGflVtf/Txiq8uk91gg78oBsS81ym4wvL+83y04U5bbCOT57maubne0wsM0RQNNh+KlBgfg5xdAxHpUZpDdEZ9EEA2rtf42RI9rflGf+uqyNWTbtQYzCpkhp0gw2ymFGkvCv6QGWMJqKCWgKfOK0snzn7YnaL0NaUAm4YmYzJwZIHZeNEyiaRGmLqkA0qRW5OelMHI3/pHmvBQnf95zv9AYzz+2XgQNNn6rZSxDCycHad9RiKIFd1F2Sgp8F/x1e4zPMEj3kf75NCWIdnpWlQov9NwqfRsU8ZNCTEVxxh9CL/MTvNoOyvS9ZAk+f7Sd+P0RwpXMXpt82Pcn6E8ndpYAIXIUNVTvBGHx0D0VS4pE771j18xceZ7O/2rSgCT0FuasVCf4BiX/+z/uZlwBkKEn4wN1HxZt5zIGJb6GvGChuGZ0SnoLbuUA/Fh2IBkQWAl0p+qrSCeYMZqlthDgy0Rw4fIQj/06LbrVOtA3nOS1O8bDSbxv4D7DYeZOlsjwEgrKJuIW2lhGoqlCda67h4FshnHXPpsB/2RDy1jhNHn7HSJFnFXOOXKd1VfiN9ThhF5oAfIzRvAQ1bSzDVoW7wRzglaogmKqRXoBQcjdTI6VPHhWjgtzD0aELOTZK5wJ+yuVvi8N7mq2m9T++A7oYEv9wbWgFIZdSwxKV00LBI2vnVgRRIOzY8c3O1uHA6EPxIy7rLBPonIC6+9a+sNnk5A8TMnhRoCW9UwiyG5mmTb4hz0Fp3m2XRKznWS3JGjRM/wB746XjQf7vaRm0cGuAroWsvqHmZINfkwEVLRicTmuKpei4yZkacIsJDy5DkBnCUoXKk3oHq57J6gocuOi+L/1+Dr9LaAAA="
+          alt="Grann logo"
+          width="91"
+          data-micromodal-trigger="pop-up_thanks"
+        />
+      </picture>
+
+      <nav class="desktop-navigation">
+        <a class="desktop-navigation__link" href="#">Каталог</a>
+        <a class="desktop-navigation__link" href="#">Про мене</a>
+        <a class="desktop-navigation__link" href="#">Доставка</a>
+        <a class="desktop-navigation__link" href="#">Контакти</a>
+      </nav>
+
+      <ul class="header__button-list">
+        <li class="header__button-item">
+          <button class="header__menu-button js-open-menu">
+            <svg class="header__icon" width="22" height="17">
+              <use href="/grann/assets/symbol-defs-tRm9ojvC.svg#burgermenu" />
+            </svg>
+          </button>
+        </li>
+
+        <li class="header__button-item">
+          <a class="header__cart-button" href="#">
+            <svg class="header__icon" width="30" height="30">
+              <use href="/grann/assets/symbol-defs-tRm9ojvC.svg#cart" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobmenu js-mobile-menu js-is-closed">
+    <button class="mobmenu__close-button js-close-menu">
+      <svg class="mobmenu__close-icon">
+        <use href="/grann/assets/symbol-defs-tRm9ojvC.svg#close" />
+      </svg>
+    </button>
+
+    <nav class="mob-navigation">
+      <ul class="mob-navigation__list">
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Бестселлери</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Каталог</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Доставка</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Про мене</a>
+        </li>
+      </ul>
+    </nav>
+
+    <picture class="mobmenu__picture">
+      <source
+        type="image/webp"
+        srcset="/grann/assets/textWhiteMob1x-jjAXo8zn.webp 1x, /img/mobPngWebp1x/textWhiteMob2x.webp 2x"
+      />
+
+      <img
+        src="/grann/assets/textWhiteMob1x-jjAXo8zn.webp"
+        alt="Cake with fruits and berries"
+      />
+    </picture>
+  </div>
+</header>
 
 </body>
 
