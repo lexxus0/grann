@@ -1,0 +1,18 @@
+@mixin font($ff, $fs, $fw, $lh, $ls) {
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+
+@mixin flex($display, $jc, $ai) {
+	display: $display;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+@mixin position($position, $transform){
+	position: $position;
+	transform: $transform;
+}

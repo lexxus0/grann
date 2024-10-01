@@ -1,0 +1,86 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__inner">
+      <picture class="header__logo">
+        <source
+          type="image/webp"
+          srcset="
+            /img/mobPngWebp1x/logoHeader1x.webp 1x,
+            /img/mobPngWebp2x/logoHeader2x.webp 2x
+          "
+        />
+
+        <img
+          src="/img/mobPngWebp1x/logoHeader1x.webp"
+          alt="Grann logo"
+          width="91"
+          data-micromodal-trigger="pop-up_thanks"
+        />
+      </picture>
+
+      <nav class="desktop-navigation">
+        <a class="desktop-navigation__link" href="#">Каталог</a>
+        <a class="desktop-navigation__link" href="#">Про мене</a>
+        <a class="desktop-navigation__link" href="#">Доставка</a>
+        <a class="desktop-navigation__link" href="#">Контакти</a>
+      </nav>
+
+      <ul class="header__button-list">
+        <li class="header__button-item">
+          <button class="header__menu-button js-open-menu">
+            <svg class="header__icon" width="22" height="17">
+              <use href="/img/svg/symbol-defs.svg#burgermenu" />
+            </svg>
+          </button>
+        </li>
+
+        <li class="header__button-item">
+          <a class="header__cart-button" href="#">
+            <svg class="header__icon" width="30" height="30">
+              <use href="/img/svg/symbol-defs.svg#cart" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobmenu js-mobile-menu js-is-closed">
+    <button class="mobmenu__close-button js-close-menu">
+      <svg class="mobmenu__close-icon">
+        <use href="/img/svg/symbol-defs.svg#close" />
+      </svg>
+    </button>
+
+    <nav class="mob-navigation">
+      <ul class="mob-navigation__list">
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Бестселлери</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Каталог</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Доставка</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">Про мене</a>
+        </li>
+      </ul>
+    </nav>
+
+    <picture class="mobmenu__picture">
+      <source
+        type="image/webp"
+        srcset="
+          /img/mobPngWebp1x/textWhiteMob1x.webp 1x,
+          /img/mobPngWebp1x/textWhiteMob2x.webp 2x
+        "
+      />
+
+      <img
+        src="/img/mobPngWebp1x/textWhiteMob1x.webp"
+        alt="Cake with fruits and berries"
+      />
+    </picture>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+.picture {
+  position: relative;
+  height: 550px;
+  display: none;
+  background-image: url("../img/deskPngWebp1x/picture.jpg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    background-image: url("../img/deskPngWebp1x/picture.jpg");
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+    background-image: url("../img/deskPngWebp2x/picture2x.jpg");
+  }
+
+  @media (min-width: 1024px) {
+    height: 625px;
+  }
+}
