@@ -1,3 +1,70 @@
-<h1>Font check</h1>
-<h3>Checkout</h3>
-<p class="modern">Hello, user.</p>
+<section class="checkout_section">
+  <p class="continue_shopping">Продовжити покупки</p>
+  <h1 class="checkout_heading">Оформлення замовлення</h1>
+  <div class="your_orders_wrapper">
+    <p>Ваше замовлення:</p>
+    <p>Торт "Наполеон"</p>
+    <p>750 грн</p>
+    <a href="../list.html">
+      <span>Додати товар</span>
+    </a>
+  </div>
+  <div class="contact_form_wrapper">
+    <form>
+      <h3>Контакти:</h3>
+      <label for="name">
+        <input type="text" name="name" placeholder="Ім'я" />
+      </label>
+      <label for="phone">
+        <input type="tel" name="phone" placeholder="Номер телефону" />
+      </label>
+      <label for="email">
+        <input type="email" name="email" placeholder="E-mail" />
+      </label>
+      <label for="date">
+        <input type="date" name="date" placeholder="Дата доставки" />
+      </label>
+    </form>
+  </div>
+  <fieldset class="how_to_deliver_wrapper">
+    <legend>Спосіб доставки</legend>
+    <input type="checkbox" id="kyiv" name="kyiv" />
+    <label for="kyiv">Самовивіз з Печерського р-ну, м. Київ.</label>
+
+    <input type="checkbox" id="taxi" name="taxi" checked />
+    <label for="taxi">На таксі (за тарифами служби таксі)</label>
+  </fieldset>
+  <form>
+    <select name="" id="">
+      <option value="Київ">Київ</option>
+      <option value="Полтава">Полтава</option>
+      <option value="Дніпро">Дніпро</option>
+      <option value="Житомир">Житомир</option>
+    </select>
+    <input type="text" name="street" placeholder="Вулиця" />
+    <input type="text" name="building" placeholder="Будинок" />
+    <input type="text" name="entrance" placeholder="Під'їзд" />
+    <input type="text" name="block" placeholder="Корпус" />
+    <input type="text" name="apartment" placeholder="Квартира" />
+    <input type="text" name="floor" placeholder="Поверх" />
+  </form>
+  <div class="how_to_pay_wrapper">
+    <form>
+      <h3>Спосіб оплати</h3>
+      <input type="checkbox" name="cash" checked>
+      <label for="cash">Готівка</label>
+      <input type="checkbox" name="creditcard">
+      <label for="creditcard">Оплата картою</label>
+
+      <textarea name="comment" placeholder="Додати коментар"></textarea>
+    </form>
+  </div>
+  <form>
+    <div class="to_pay_section">
+      <p>Всього до сплати:</p>
+      <p>750 грн</p>
+      <button type="submit">Оформити замовлення</button>
+    </div>
+  </form>
+
+</section>
