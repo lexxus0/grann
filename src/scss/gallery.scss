@@ -43,7 +43,7 @@
       border-radius: 126.5px;
       width: 300px;
 
-	@media (min-width: 320px) {
+	@media (min-width: 480px) {
 		min-width: 355px;
 	}
 
@@ -57,7 +57,7 @@
 	@include font($font-family, 18px, 300, 24px, 0.02em);
 	transition: all 0.9s ease;
 	outline: none;
-	min-width: 276px;
+	min-width: 250px;
 	height: 67px;
 	padding: 23px 0px 20px 0px;
 	background-color: $main-pastel ;
@@ -66,6 +66,10 @@
 	border-radius: 10px;
 	bottom: 0%;
 	left: 50%;
+
+	@media (min-width: 480px) {
+			min-width: 276px;
+		}
 
 	@media (min-width: 768px) {
 		min-width: 300px;
