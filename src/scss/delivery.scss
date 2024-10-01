@@ -21,11 +21,11 @@
     position: absolute;
     width: 100%;
     height: 1010px;
-    top: 0px;
+    inset: 0px;
     background-image: url("../img/deskPngWebp1x/vector-fon.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top, left;
+    background-position: top;
     z-index: -1;
 
     @media (min-width: 768px) {
@@ -34,6 +34,8 @@
 
     @media (min-width: 1350px) {
       height: 857px;
+      background-size: contain;
+      background-repeat: repeat-x;
     }
 
     @media screen and (min-resolution: 192dpi) and (min-width: 1024px) {
