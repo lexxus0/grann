@@ -13,15 +13,8 @@ const swiperInsta = new Swiper('.insta-swiper', {
         prevEl: '.insta__swipBtn--prev',
     },
     pagination: {
-        el: ".swiper-pagination.insta__swiperPagination",
+        el: ".insta__swiperPagination",
         clickable: true,
-    },
-        on: {
-        init: function () {
-            console.log('Swiper initialized');
-            console.log('Next button element:', document.querySelector('.insta__swipBtn--next'));
-            console.log('Prev button element:', document.querySelector('.insta__swipBtn--prev'));
-        },
     },
 });
 

@@ -58,3 +58,11 @@ const swiperDesktop = new Swiper('.bestsellers__slider.swiper', {
     },
   },
 });
+
+
+
+
+document.querySelector('[data-open="catalog"]').addEventListener('click', () => {
+  localStorage.setItem('catalogOpened', 'true');
+  window.location.href = 'catalog.html';
+});
