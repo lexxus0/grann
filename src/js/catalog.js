@@ -15,32 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function initializeSwiper() {
-  const swiperRev = new Swiper('', {
+  const swiperRev = new Swiper('.catalog__swiper', {
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
     navigation: {
-      nextEl: '',
-      prevEl: '',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-      375: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 16,
-      },
-      1440: {
-        slidesPerView: 4,
-        spaceBetween: 16,
-      },
+      nextEl: '.catalog__swipBtn--next',
+      prevEl: '.catalog__swipBtn--prev',
     },
   });
 }
@@ -55,15 +37,24 @@ function renderMarkupCatalog(array) {
   return array
     .map(
       (ar) => `
-        <li class="swiper-slide">
-            <a href="" class="">
+        <li class="swiper-slide catalog__itemSwip">
+            <a href="" class="catalog__linkSwip">
                 <img 
-                    class=""
-                    data-src="" 
+                    class="catalog__imgSwip"
+                    src="${ar.image}" 
                     alt="commentator's photo" 
+                    lazy="loading"
                 />
-                <h3 class="">${ar.author}</h3>
-                <p class="">${ar.review}</p>
+                <div class="catalog__containarAboutSwip">
+                  <h3 class="catalog__titleSecondarySwip">${ar.name}</h3>
+                  <button class="catalog__btnCartSwip">
+				            <svg class="catalog__iconCartSwip">
+				              <use href="./img/svg/symbol-defs.svg#cart"></use>
+				            </svg>
+			            </button>
+                </div>
+                
+                <p class="">${ar.price}</p>
             </a>
         </li>`
     )

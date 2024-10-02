@@ -14,17 +14,17 @@
 			<button class="catalog__categoriesBtn" type="button" data-action="pizza">Піцца</button>
 		</li>
 	</ul>
-	<div class="swiper">
-		<ul class="catalog__list" data-action="catalog"></ul>
-		<div class="">
-			<button class="catalog__swipBtn--prev">
-				<svg class="">
+	<div class="swiper catalog__swiper catalog__containerSwip">
+		<ul class="catalog__listSwip swiper-wrapper" data-action="catalog"></ul>
+		<div class="catalog__containerPaginSwip">
+			<button class="catalog__btnPagin catalog__swipBtn--prev">
+				<svg class="catalog__iconPagin">
 					<use href="./img/svg/symbol-defs.svg#ArrowLeftCatalog"></use>
 				</svg>
-			      </button>
-			<div class="swiper-pagination"></div>
-			<button class="catalog__swipBtn--next">
-				<svg class="">
+			</button>
+			<div class="swiper-pagination catalog__pagination"></div>
+			<button class="catalog__btnPagin catalog__swipBtn--next">
+				<svg class="catalog__swipIcon">
 					<use href="./img/svg/symbol-defs.svg#ArrowRightCatalog"></use>
 				</svg>
 			</button>

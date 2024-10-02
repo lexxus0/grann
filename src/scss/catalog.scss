@@ -1,13 +1,47 @@
-.catalog{}
+@import "swiper/css";
+@import '../styles/themes/colors';
+@import '../styles/themes/fonts';
+@import '../styles/layout/grid';
+@import '../styles/layout/mixins';
+.catalog{
+	place-items: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 
 .catalog__title{}
 
 .catalog__listCategories{
-	display: flex;
 }
 
 .catalog__categoriesItem{}
 
 .catalog__categoriesBtn{}
 
-.catalog__list{}
+.catalog__containerSwip{
+
+}
+
+.catalog__listSwip{}
+
+.catalog__itemSwip{}
+
+.catalog__linkSwip{}
+
+.catalog__imgSwip{}
+
+.catalog__containarAboutSwip{}
+
+.catalog__titleSecondarySwip{}
+
+.catalog__btnCartSwip{}
+
+.catalog__iconCartSwip{}
+
+.catalog__containerPaginSwip{}
+
+.catalog__btnPagin{}
+
+.catalog__iconPagin{}
+
+.catalog__pagination{}
