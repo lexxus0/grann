@@ -1,9 +1,5 @@
 import Swiper from 'swiper/bundle';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 const swiperMobile = new Swiper('.bestsellers__slider_mobile.swiper', {
   direction: 'horizontal',
   speed: 400,

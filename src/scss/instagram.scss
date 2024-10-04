@@ -55,13 +55,12 @@
 	fill: $main-brown;
 }
 
-.swiper-pagination.insta__swiperPagination {
-	z-index: 10;
-	display: inline-flex;
-	align-items: center;
+.insta__swiperPagination.swiper-pagination {
+	bottom: 0;
+	position: static;
 }
 
-.swiper-pagination-bullet {
+.insta__swiperPagination {
 	width: 11px;
 	height: 11px;
 	background-color: $main-pastel;
@@ -71,7 +70,7 @@
 	transition: opacity 0.3s;
 }
 
-.swiper-pagination-bullet-active {
+.insta__swiperPagination--active {
 	background-color: $main-brown;
 	opacity: 1;
 }

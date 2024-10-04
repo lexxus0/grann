@@ -5,43 +5,175 @@
 @import '../styles/layout/mixins';
 .catalog{
 	place-items: center;
-	padding-top: 60px;
-	padding-bottom: 60px;
+      padding: 24px 10px 120px 10px;
+	@media (min-width:768px) {
+	      padding: 24px 25px 115px 25px;
+	}
+	@media (min-width:1440px) {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 24px;
+		@media (min-width:768px) {
+			margin-bottom: 18px;
+		}
+	}
+
+	&__listCategories {
+		@include flex(flex, flex-start, center);
+	}
+	
+	&__categoriesItem {
+		margin-right: 32px;
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+	
+      &__categoriesBtn {
+		transition: background-color 250ms;
+		outline: none;
+		padding: 10px 30px 10px 30px;
+		border: 1px solid $main-brown;
+		border-radius: 100px;
+		&:hover, &:focus{
+			color: $main-pastel;
+			background-color: $main-brown;
+		}
+	}
+	
+      &__containerSwip {}
+
+	&__swiper {}
+	
+	&__listSwip {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 16px;
+		@media (min-width:768px) {
+			margin-bottom: 24px
+		}
+	}
+
+	&__itemSwip {
+		margin-top: 32px !important;
+	}
+
+	&__imgSwip{
+		margin-bottom: 20px;
+	}
+
+	&__linkSwip {
+		position: relative;
+		outline: none;
+		&::after {
+			content: 'ПЕРЕГЛЯНУТИ ДЕТАЛЬНІШЕ';
+			@include flex(flex, center, center);
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0.8);
+			background-color: #f5eee0ce;
+			border-radius: 500px;
+			color: #705a66a6;
+			padding: 10px;
+			@include font(Montserrat, 10px, 600, 16px, 0.02em);
+			z-index: 1;
+			opacity: 0;
+			transition: opacity 0.8s ease, transform 0.8s ease;
+			pointer-events: none;
+		}
+		&:hover::after,
+		&:focus::after {
+			opacity: 1;
+			transform: translate(-50%, -50%) scale(1);
+			transition-delay: 0.8s;
+		}
+	}
+
+	&__containarElSwip {
+		@include flex(flex, space-between, flex-start);
+	}
+	
+	
+	&__titleSecondarySwip {
+		@include font(Montserrat, 16px, 600, 22px, 0.02em);
+		text-align: left;
+		margin-bottom: 12px;
+		@media (min-width:768px) {
+			@include font(Montserrat, 24px, 500, 32px, 0.02em);
+		}
+	}
+	
+	&__priceSwip {
+		@include font(Montserrat, 14px, 300, 18px, 0.02em);
+		text-align: left;
+		@media (min-width:768px) {
+			@include font(Montserrat, 16px, 300, 22px, 0.02em);
+		}
+	}
+	
+	&__btnCartSwip {
+		outline: none;
+		@include flex (flex, center, center);
+	}
+	
+	&__iconCartSwip {
+		width: 17px;
+		height: 17px;
+		fill: $main-brown;
+		transition: fill 250ms;
+		@media (min-width:768px) {
+			width: 25px;
+			height: 25px;
+		}
+		&:hover,
+		&:focus {
+			fill: #705a66a6;
+		}
+	}
+
+	&__containerPaginSwip {
+		@include flex(flex, center, center);
+	}
+
+	&__btnPagin {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: $main-brown;
+		@include flex(flex, center, center);
+	}
+	&__iconPagin {
+		width: 20px;
+		height: 10px;
+		fill: $main-pastel;
+	}
+	
+	&__pagination {
+		position: static;
+		max-width: 300px;
+	}
+	
+	.swiper-pagination-bullet {
+		width: 20px;
+		height: 22px;
+	      text-align: center;
+		border-radius: 0;
+		color: $main-brown;
+		opacity: 1;
+		background: transparent;
+		line-height: 22px;
+		font-size: 16px;
+	}
+	
+	.swiper-pagination-bullet-active {
+		border-bottom: 1px solid $main-brown;
+	}
+	
 }
-
-.catalog__title{}
-
-.catalog__listCategories{
-}
-
-.catalog__categoriesItem{}
-
-.catalog__categoriesBtn{}
-
-.catalog__containerSwip{
-
-}
-
-.catalog__listSwip{}
-
-.catalog__itemSwip{}
-
-.catalog__linkSwip{}
-
-.catalog__imgSwip{}
-
-.catalog__containarAboutSwip{}
-
-.catalog__titleSecondarySwip{}
-
-.catalog__btnCartSwip{}
-
-.catalog__iconCartSwip{}
-
-.catalog__containerPaginSwip{}
-
-.catalog__btnPagin{}
-
-.catalog__iconPagin{}
-
-.catalog__pagination{}

@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-
 function initializeSwiper() {
   const swiperRev = new Swiper('.catalog__swiper', {
     keyboard: {
@@ -24,8 +22,40 @@ function initializeSwiper() {
       nextEl: '.catalog__swipBtn--next',
       prevEl: '.catalog__swipBtn--prev',
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        grid: {
+          rows: 5,
+        },
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        grid: {
+          rows: 5,
+        },
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 5,
+        },
+      },
+    },
+    pagination: {
+      el: '.catalog__pagination',
+      clickable: true,
+      renderBullet: function (index, catalog__bullet) {
+        return '<span class="' + catalog__bullet + '">' + (index + 1) + '</span>';
+      },
+    },
   });
 }
+
+
 
 async function runCatalog() {
   const catalogArray = await getCatalog();
@@ -39,22 +69,22 @@ function renderMarkupCatalog(array) {
       (ar) => `
         <li class="swiper-slide catalog__itemSwip">
             <a href="" class="catalog__linkSwip">
-                <img 
-                    class="catalog__imgSwip"
-                    src="${ar.image}" 
-                    alt="commentator's photo" 
-                    lazy="loading"
+                <img class="catalog__imgSwip"
+                  src="${ar.image}" 
+                  alt="commentator's photo" 
+                  lazy="loading"
                 />
-                <div class="catalog__containarAboutSwip">
+              <div class="catalog__containarElSwip">
+                <div>
                   <h3 class="catalog__titleSecondarySwip">${ar.name}</h3>
-                  <button class="catalog__btnCartSwip">
-				            <svg class="catalog__iconCartSwip">
-				              <use href="./img/svg/symbol-defs.svg#cart"></use>
-				            </svg>
-			            </button>
+                  <p class="catalog__priceSwip">${ar.price}</p>
                 </div>
-                
-                <p class="">${ar.price}</p>
+                <button class="catalog__btnCartSwip">
+				          <svg class="catalog__iconCartSwip">
+				              <use href="./img/svg/symbol-defs.svg#cart"></use>
+				          </svg>
+			          </button>
+              </div>
             </a>
         </li>`
     )
@@ -62,5 +92,8 @@ function renderMarkupCatalog(array) {
 }
 
 function createMarkupCatalog(callback, array) {
+  // catalogContainer.insertAdjacentHTML('beforeend', callback(array));
+
+    catalogContainer.innerHTML = ''; // Очищуємо контейнер перед додаванням нових слайдів
   catalogContainer.insertAdjacentHTML('beforeend', callback(array));
 }
