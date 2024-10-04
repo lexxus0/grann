@@ -8,12 +8,50 @@ document.addEventListener('DOMContentLoaded', () => {
   const catalogOpened = localStorage.getItem('catalogOpened');
 
   if (catalogOpened === 'true') {
-    runCatalog();
+    runCatalog(getCatalog());
   }
 });
 
+async function runCatalog(get) {
+  const catalogArray = await get;
+  createMarkupCatalog(renderMarkupCatalog, catalogArray);
+  initializeSwiper();
+};
+
+function renderMarkupCatalog(array) {
+  return array
+    .map(
+      (ar) => `
+        <li class="swiper-slide catalog__itemSwip">
+            <a href="../list_info.html" class="catalog__linkSwip data-list">
+                <img class="catalog__imgSwip"
+                  src="${ar.image}" 
+                  alt="commentator's photo" 
+                  lazy="loading"
+                />
+              <div class="catalog__containarElSwip">
+                <div>
+                  <h3 class="catalog__titleSecondarySwip">${ar.name}</h3>
+                  <p class="catalog__priceSwip">${ar.price}</p>
+                </div>
+                <button class="catalog__btnCartSwip">
+				          <svg class="catalog__iconCartSwip">
+				              <use href="./img/svg/symbol-defs.svg#cart"></use>
+				          </svg>
+			          </button>
+              </div>
+            </a>
+        </li>`
+    )
+    .join('');
+}
+
+function createMarkupCatalog(callback, array) {
+  catalogContainer.insertAdjacentHTML('beforeend', callback(array));
+}
+
 function initializeSwiper() {
-  const swiperRev = new Swiper('.catalog__swiper', {
+  const swiperCat = new Swiper('.catalog__swiper', {
     keyboard: {
       enabled: true,
       onlyInViewport: false,
@@ -55,45 +93,21 @@ function initializeSwiper() {
   });
 }
 
-
-
-async function runCatalog() {
-  const catalogArray = await getCatalog();
-  createMarkupCatalog(renderMarkupCatalog, catalogArray);
-  initializeSwiper();
-};
-
-function renderMarkupCatalog(array) {
-  return array
-    .map(
-      (ar) => `
-        <li class="swiper-slide catalog__itemSwip">
-            <a href="" class="catalog__linkSwip">
-                <img class="catalog__imgSwip"
-                  src="${ar.image}" 
-                  alt="commentator's photo" 
-                  lazy="loading"
-                />
-              <div class="catalog__containarElSwip">
-                <div>
-                  <h3 class="catalog__titleSecondarySwip">${ar.name}</h3>
-                  <p class="catalog__priceSwip">${ar.price}</p>
-                </div>
-                <button class="catalog__btnCartSwip">
-				          <svg class="catalog__iconCartSwip">
-				              <use href="./img/svg/symbol-defs.svg#cart"></use>
-				          </svg>
-			          </button>
-              </div>
-            </a>
-        </li>`
-    )
-    .join('');
+let swiperBtn;
+function initSwiperBtn() {
+  if (window.innerWidth <= 480) {
+    if (!swiperBtn) {
+      swiperBtn = new Swiper('.btn__swiper', {
+        slidesPerView: 1,
+        spaceBetween: 32,
+      });
+    }
+  } else {
+    if (swiperBtn) {
+      swiperBtn.destroy(true, true);
+      swiperBtn = undefined;
+    }
+  }
 }
-
-function createMarkupCatalog(callback, array) {
-  // catalogContainer.insertAdjacentHTML('beforeend', callback(array));
-
-    catalogContainer.innerHTML = ''; // Очищуємо контейнер перед додаванням нових слайдів
-  catalogContainer.insertAdjacentHTML('beforeend', callback(array));
-}
+initSwiperBtn();
+window.addEventListener('resize', initSwiperBtn);

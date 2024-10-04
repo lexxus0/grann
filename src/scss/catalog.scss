@@ -4,10 +4,9 @@
 @import '../styles/layout/grid';
 @import '../styles/layout/mixins';
 .catalog{
-	place-items: center;
       padding: 24px 10px 120px 10px;
 	@media (min-width:768px) {
-	      padding: 24px 25px 115px 25px;
+	  padding: 24px 25px 115px 25px;
 	}
 	@media (min-width:1440px) {
 		padding-left: 100px;
@@ -24,16 +23,24 @@
 
 	&__listCategories {
 		@include flex(flex, flex-start, center);
+		@media (min-width:768px) {
+			margin-bottom: 32px;
+		}
 	}
 	
 	&__categoriesItem {
-		margin-right: 32px;
-		&:last-child{
-			margin-right: 0px;
+	      max-width: 120px;
+
+		@media (min-width:481px) {
+			margin-right: 32px;
+			&:last-child {
+				margin-right: 0px;
+			}
 		}
 	}
 	
       &__categoriesBtn {
+	      width: 120px;
 		transition: background-color 250ms;
 		outline: none;
 		padding: 10px 30px 10px 30px;
@@ -44,10 +51,6 @@
 			background-color: $main-brown;
 		}
 	}
-	
-      &__containerSwip {}
-
-	&__swiper {}
 	
 	&__listSwip {
 		display: flex;
@@ -149,6 +152,7 @@
 		background-color: $main-brown;
 		@include flex(flex, center, center);
 	}
+
 	&__iconPagin {
 		width: 20px;
 		height: 10px;
@@ -176,4 +180,38 @@
 		border-bottom: 1px solid $main-brown;
 	}
 	
+}
+
+.breadcrumb {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	margin-bottom: 32px;
+	@media (min-width: 768px) {
+		margin-bottom: 18px;
+	}
+}
+
+.breadcrumb__item {
+	@include font(Montserrat, 16px, 300, 22px, 0.02em);
+	display: inline;
+	margin-right: 5px;
+	color: $main-brown;
+}
+
+.breadcrumb__itemMain {
+	color: #252525;
+	transition: color 0.3s;
+}
+
+.breadcrumb__item a:hover {
+	color: $main-brown;
+}
+
+.breadcrumb__item+.breadcrumb__item::before {
+	content: "/";
+	margin-right: 5px;
+	color: #705A66;
 }

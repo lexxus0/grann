@@ -1,19 +1,31 @@
 <section class="catalog">
+	<nav aria-label="breadcrumb">
+		<ul class="breadcrumb">
+			<li class="breadcrumb__item breadcrumb__itemMain">
+				<a href="/">Головна</a>
+			</li>
+			<li class="breadcrumb__item">
+				<span>Каталог</span>
+			</li>
+		</ul>
+	</nav>
 	<h2 class="catalog__title">Каталог</h2>
-	<ul class="catalog__listCategories">
-		<li class="catalog__categoriesItem">
-			<button class="catalog__categoriesBtn" type="button" data-action="cake">Торти</button>
-		</li>
-		<li class="catalog__categoriesItem">
-			<button class="catalog__categoriesBtn" type="button" data-action="cakes">Тістечка</button>
-		</li>
-		<li class="catalog__categoriesItem">
-			<button class="catalog__categoriesBtn" type="button" data-action="shy">Шу</button>
-		</li>
-		<li class="catalog__categoriesItem">
-			<button class="catalog__categoriesBtn" type="button" data-action="pizza">Піцца</button>
-		</li>
-	</ul>
+      <div class="swiper btn__swiper">
+	      <ul class="swiper-wrapper catalog__listCategories">
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="cake">Торти</button>
+	      	</li>
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="cakes">Тістечка</button>
+	      	</li>
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="shy">Шу</button>
+	      	</li>
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="pizza">Піцца</button>
+	      	</li>
+	      </ul>
+      </div>
 	<div class="swiper catalog__swiper">
 		<ul class="catalog__listSwip swiper-wrapper" data-action="catalog">
 			<!-- Слайди будуть тут -->
