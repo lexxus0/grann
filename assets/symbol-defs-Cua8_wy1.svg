@@ -1,0 +1,46 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="Vector-1" viewBox="0 0 12 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M1.506 1.886c8.67 5.1 8.218 20.023 8.218 28.761"></path>
+        </symbol>
+        <symbol id="Vector-3" viewBox="0 0 12 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.0526" d="M9.245 28.638c-0.718-7.903-1.819-25.95-5.19-25.95"></path>
+        </symbol>
+        <symbol id="Vector-4" viewBox="0 0 26 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.1739" d="M24.22 28.584c-9.73-1.946-18.177-17.575-21.437-25.725"></path>
+        </symbol>
+        <symbol id="Vector-5" viewBox="0 0 23 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M2.656 2.32c10.918 5.459 13.567 17.292 18.666 27.999"></path>
+        </symbol>
+        <symbol id="Vector-6" viewBox="0 0 89 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2.652 2.818c1.93 10.616 13.429 20.084 22.468 24.413 18.099 8.667 44.641-5.247 61.14-12.746"></path>
+        </symbol>
+        <symbol id="Vector-7" viewBox="0 0 20 32">
+            <path
+                stroke-linejoin="miter"
+                stroke-linecap="round"
+                stroke-miterlimit="4"
+                stroke-width="0.7934"
+                d="M0.46 1.239c1.45-0.29 2.135-1.016 3.805-0.794 3.093 0.412 5.088 3.463 5.345 6.349 0.058 0.649-0.177 8.148-2.358 6.513-1.931-1.448 0.367-4.266 2.451-3.385 3.342 1.414 4.622 5.489 3.688 8.777-0.872 3.069-2.911 1.351-0.28 1.074 6.586-0.693 8.744 11.718 2.054 11.718"
+            ></path>
+        </symbol>
+        <symbol id="Vector-8" viewBox="0 0 15 32">
+            <path
+                stroke-linejoin="miter"
+                stroke-linecap="round"
+                stroke-miterlimit="4"
+                stroke-width="0.7442"
+                d="M8.908 1.057c0.229 0.033 0.459 0.058-0.088-0.307-1.755-1.17-4.884 2.009-5.605 3.153-1.549 2.456-4.452 9.016-1.095 11.254 1.175 0.784 3.127 0.959 4.423 0.394 0.704-0.307 1.651-1.114 0.394-1.401-6.689-1.529-8.526 17.498 2.934 11.495 1.012-0.53 3.378-1.551 3.897-2.737 0.376-0.86-1.767 0.759-2.43 1.423-0.98 0.98-1.749 2.698-1.598 4.094 0.335 3.109 2.714 2.978 5.080 2.978"
+            ></path>
+        </symbol>
+        <symbol id="Vector-10" viewBox="0 0 12 32">
+            <path
+                stroke-linejoin="miter"
+                stroke-linecap="round"
+                stroke-miterlimit="4"
+                stroke-width="1.2152"
+                d="M4.629 0.617c-0.691 4.588-2.26 8.929-3.278 13.423-0.588 2.594-0.927 4.965 0.075 7.552 1.354 3.495 3.965 6.223 7.186 8.050 0.846 0.48 1.637 1.041 2.442 1.578"
+            ></path>
+        </symbol>
+    </defs>
+</svg>
