@@ -6,7 +6,7 @@ import * as catalog_item_contact_form from './js/catalog_item_contact_form.js';
 import * as catalog_item from './js/catalog_item.js';
 import * as catalog_tabs from './js/catalog_tabs.js';
 import * as catalog_upsell from './js/catalog_upsell.js';
-import * as catalog from './js/catalog.js';
+// import * as catalog from './js/catalog.js';
 import * as checkout from './js/checkout.js';
 import * as contact_form from './js/contact_form.js';
 import * as delivery from './js/delivery.js';

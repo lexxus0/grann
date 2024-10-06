@@ -1,9 +1,5 @@
 import Swiper from 'swiper/bundle';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 const swiperMobile = new Swiper('.bestsellers__slider_mobile.swiper', {
   direction: 'horizontal',
   speed: 400,
@@ -57,4 +53,12 @@ const swiperDesktop = new Swiper('.bestsellers__slider.swiper', {
       spaceBetween: 32,
     },
   },
+});
+
+
+
+
+document.querySelector('[data-open="catalog"]').addEventListener('click', () => {
+  localStorage.setItem('catalogOpened', 'true');
+  window.location.href = 'catalog.html';
 });
