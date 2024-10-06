@@ -2,9 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/grann/list.js"></script>
+  <link rel="modulepreload" crossorigin href="/grann/assets/main-5Bt9f44l.js">
+  <link rel="modulepreload" crossorigin href="/grann/assets/vendor-CK6Z_Hq3.js">
+  <link rel="stylesheet" crossorigin href="/grann/assets/main-D8ZsDvkx.css">
+  <link rel="stylesheet" crossorigin href="/grann/assets/vendor-CzG10Eoq.css">
 </head>
 
 <body>
@@ -88,6 +103,87 @@
     </picture>
   </div>
 </header>
+
+  <main>
+    <section class="catalog">
+	<nav aria-label="breadcrumb">
+		<ul class="breadcrumb">
+			<li class="breadcrumb__item breadcrumb__itemMain">
+				<a href="/">Головна</a>
+			</li>
+			<li class="breadcrumb__item">
+				<span>Каталог</span>
+			</li>
+		</ul>
+	</nav>
+	<h2 class="catalog__title">Каталог</h2>
+      <div class="swiper btn__swiper">
+	      <ul class="swiper-wrapper catalog__listCategories">
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="cake">Торти</button>
+	      	</li>
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="cakes">Тістечка</button>
+	      	</li>
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="shy">Шу</button>
+	      	</li>
+	      	<li class="swiper-slide catalog__categoriesItem">
+	      		<button class="catalog__categoriesBtn" type="button" data-action="pizza">Піцца</button>
+	      	</li>
+	      </ul>
+      </div>
+	<div class="swiper catalog__swiper">
+		<ul class="catalog__listSwip swiper-wrapper" data-action="catalog">
+			<!-- Слайди будуть тут -->
+		</ul>
+		<div class="catalog__containerPaginSwip">
+			<button class="catalog__btnPagin catalog__swipBtn--prev">
+				<svg class="catalog__iconPagin">
+					<use href="/grann/assets/symbol-defs-tRm9ojvC.svg#ArrowLeftCatalog"></use>
+				</svg>
+			</button>
+			<div class="swiper-pagination catalog__pagination"></div>
+			<button class="catalog__btnPagin catalog__swipBtn--next">
+				<svg class="catalog__iconPagin">
+					<use href="/grann/assets/symbol-defs-tRm9ojvC.svg#ArrowRightCatalog"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
+  </main>
+  
+  <section class="pop-up pop-up_thanks" id="pop-up_thanks" aria-hidden="true">
+  <div class="pop-up__container">
+    <div class="pop-up__wrapper" aria-modal="true" role="dialog" aria-labelledby="pop-up__title">
+      <div class="pop-up__image">
+        <img src="/grann/assets/orderMob1x-cDHMXRLJ.webp" alt="Тортик Медовик" />
+      </div>
+
+      <h2 id="pop-up__title" class="pop-up__title">Дякую за замовлення!</h2>
+
+      <p class="pop-up__text">Ваше замовлення прийняте в обробку та незабаром
+        вам зателефонує менеджер для уточнення деталей</p>
+
+      <div class="pop-up__buttons">
+        <a class="pop-up__btn btn_main" href="/index.html">
+          На головну
+        </a>
+
+        <a class="pop-up__btn btn_main btn_second" href="/list.html">
+          продовжити покупки
+        </a>
+      </div>
+    </div>
+
+    <button class="pop-up__btn_close" data-micromodal-close>
+      <svg class="delivery-item__icon" data-micromodal-close>
+        <use xlink:href="../img/svg/symbol-defs.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+</section>
 
 </body>
 
