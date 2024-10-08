@@ -2,7 +2,6 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 
 axios.defaults.baseURL = 'https://66f82af52a683ce9730ed951.mockapi.io';
-const PRE_PAGE = 'page=15';
 
 export async function getCatalog() {
   try {

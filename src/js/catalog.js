@@ -1,33 +1,47 @@
-import { getCatalog } from './api';
+import { getCatalog } from './api'; //   getCatalog повертає всі елементи
 import Swiper from 'swiper/bundle';
-
 
 const catalogContainer = document.querySelector('[data-action="catalog"]');
 
 document.addEventListener('DOMContentLoaded', () => {
   const catalogOpened = localStorage.getItem('catalogOpened');
-
+  
   if (catalogOpened === 'true') {
-    runCatalog(getCatalog());
+    // Запит для отримання всього каталогу
+    fetchAllCatalogItems();
   }
 });
 
+// Функція для отримання всіх елементів каталогу
+async function fetchAllCatalogItems() {
+  const catalogArray = await getCatalog(); // Отримуємо всі елементи каталогу
+  const selectedCategory = localStorage.getItem('selectedMenu'); // Отримуємо категорію з локального сховища
+  
+  // Фільтруємо елементи в залежності від вибраної категорії
+  const filteredCatalogArray = selectedCategory 
+    ? catalogArray.filter(item => item.category === selectedCategory) // Змінити item.category на відповідну категорію
+    : catalogArray; // Якщо категорія не вибрана, беремо всі елементи
+
+  runCatalog(Promise.resolve(filteredCatalogArray)); // Рендеримо відповідні елементи
+}
+
+// Основна функція рендерингу
 async function runCatalog(get) {
   const catalogArray = await get;
   createMarkupCatalog(renderMarkupCatalog, catalogArray);
   initializeSwiper();
-};
+}
 
 function renderMarkupCatalog(array) {
   return array
     .map(
       (ar) => `
         <li class="swiper-slide catalog__itemSwip">
-            <a href="../list_info.html" class="catalog__linkSwip data-list">
+            <a href="./list_info.html" class="catalog__linkSwip data-list">
                 <img class="catalog__imgSwip"
                   src="${ar.image}" 
-                  alt="commentator's photo" 
-                  lazy="loading"
+                  alt="${ar.name}" 
+                  loading="lazy"
                 />
               <div class="catalog__containarElSwip">
                 <div>
@@ -36,7 +50,7 @@ function renderMarkupCatalog(array) {
                 </div>
                 <button class="catalog__btnCartSwip">
 				          <svg class="catalog__iconCartSwip">
-				              <use href="./img/svg/symbol-defs.svg#cart"></use>
+				              <use href="../img/svg/symbol-defs.svg#cart"></use>
 				          </svg>
 			          </button>
               </div>
@@ -98,7 +112,7 @@ function initSwiperBtn() {
   if (window.innerWidth <= 480) {
     if (!swiperBtn) {
       swiperBtn = new Swiper('.btn__swiper', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 32,
       });
     }

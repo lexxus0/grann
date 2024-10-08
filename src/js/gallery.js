@@ -3,7 +3,14 @@ const galleryListBtn = document.querySelector('[data-gallery]');
 document.addEventListener('click', onClicBtnGallery);
 
 function onClicBtnGallery(e) {
-	changesСlass(e);
+    changesСlass(e);
+
+    if (e.target.nodeName === 'BUTTON' && e.target.dataset.menu) {
+        const menuValue = e.target.dataset.menu;
+
+        localStorage.setItem('selectedMenu', menuValue);
+        localStorage.setItem('catalogOpened', 'true');
+    }
 }
 
 function changesСlass(e) {
@@ -27,3 +34,5 @@ function changesСlass(e) {
         e.target.classList.add('gallery__btn--active');
     }
 }
+
+
