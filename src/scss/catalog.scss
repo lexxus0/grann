@@ -29,8 +29,6 @@
 	}
 	
 	&__categoriesItem {
-	      max-width: 120px;
-
 		@media (min-width:481px) {
 			margin-right: 32px;
 			&:last-child {
@@ -40,7 +38,6 @@
 	}
 	
       &__categoriesBtn {
-	      width: 120px;
 		transition: background-color 250ms;
 		outline: none;
 		padding: 10px 30px 10px 30px;
@@ -52,6 +49,10 @@
 		}
 	}
 	
+      .swiper-slide{
+		width: auto;
+	}
+
 	&__listSwip {
 		display: flex;
 		flex-wrap: wrap;
@@ -155,7 +156,7 @@
 
 	&__iconPagin {
 		width: 20px;
-		height: 10px;
+		height: auto;
 		fill: $main-pastel;
 	}
 	
